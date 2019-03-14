@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Facultad de Idiomas de la Uabjo</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -81,17 +81,15 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Portal de Servicios JatNijawe
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="/">Inicio</a>
+                    <a href="https://laracasts.com">Servicio Social</a>
+                    <a href="https://laravel-news.com">Prácticas Profesionales</a>
+                    <a href="https://forge.laravel.com">Acerca de</a>
+                    <a href="https://github.com/laravel/laravel">JatWeb</a>
                 </div>
             </div>
         </div>
