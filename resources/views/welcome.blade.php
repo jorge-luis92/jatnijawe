@@ -81,15 +81,15 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Portal de Servicios JatNijawe
+                    Portal de Servicios Jat Nijawe
                 </div>
 
                 <div class="links">
-                    <a href="/">Inicio</a>
-                    <a href="https://laracasts.com">Servicio Social</a>
-                    <a href="https://laravel-news.com">Prácticas Profesionales</a>
-                    <a href="https://forge.laravel.com">Acerca de</a>
-                    <a href="https://github.com/laravel/laravel">JatWeb</a>
+                    <a href="login">Inicio</a>
+                    <a href="/prueba">Servicio Social</a>
+                    <a href="">Prácticas Profesionales</a>
+                    <a href="">Acerca de</a>
+                    <a href="">JatWeb</a>
                 </div>
             </div>
         </div>
