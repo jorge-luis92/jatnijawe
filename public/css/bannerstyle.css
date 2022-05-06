@@ -1,0 +1,12 @@
+div#banner{
+	width:auto%;
+
+}
+
+img#img_banner{
+	position:relative;
+	display: block;
+	margin:auto;
+
+	max-width:1356px;
+}
