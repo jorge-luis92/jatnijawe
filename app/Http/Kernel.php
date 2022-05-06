@@ -57,9 +57,18 @@ class Kernel extends HttpKernel
         'cache.headers' => \Illuminate\Http\Middleware\SetCacheHeaders::class,
         'can' => \Illuminate\Auth\Middleware\Authorize::class,
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
+        'revalidate' => \App\Http\Middleware\RevalidateBackHistory::class,
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+        'formacionmiddleware'=> \App\Http\Middleware\Autenticacion::class,
+        'adminmiddleware'=> \App\Http\Middleware\MDusuarioadmin::class,
+        'estudiantemiddleware'=> \App\Http\Middleware\MDusuariostandard::class,
+        'talleristamiddleware'=> \App\Http\Middleware\TalleristaM::class,
+        'planeacionmiddleware'=> \App\Http\Middleware\UsuarioPlaneacion::class,
+        'serviciomiddleware'=> \App\Http\Middleware\UsuarioServicio::class,
+        'academicomiddleware'=> \App\Http\Middleware\UsuarioAcademico::class,
+
     ];
 
     /**

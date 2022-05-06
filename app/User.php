@@ -2,12 +2,19 @@
 
 namespace App;
 
+use Illuminate\Auth\Authenticatable;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Auth\Passwords\CanResetPassword;
+use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
+use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Foundation\Auth\User as Authenticatable;
+//use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class User extends Authenticatable
+
+class User extends Model implements AuthenticatableContract, CanResetPasswordContract
 {
+    use Authenticatable, CanResetPassword;
     use Notifiable;
 
     /**
@@ -15,8 +22,11 @@ class User extends Authenticatable
      *
      * @var array
      */
+     protected $table = 'users';
+     protected $primaryKey = 'id_user'; // or null
+    public $incrementing = false;
     protected $fillable = [
-        'name', 'email', 'password',
+        'id_user', 'username','email', 'password','tipo_usuario','id_persona','imagenurl', 'facebook', 'periodo',
     ];
 
     /**
@@ -36,4 +46,11 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+public function scopeBusqueda($jquery, $nombre){
+
+  if($nombre)
+  return $jquery->where( 'estudiantes.matricula', 'LIKE', '%' . $q . '%' );
+}
+
 }
